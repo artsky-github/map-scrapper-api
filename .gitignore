@@ -1,2 +1,5 @@
 .env
+map-print-count.json
+bp-success-messages.json
+bt-success-messages.json
 node_modules

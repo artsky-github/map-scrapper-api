@@ -1,7 +1,7 @@
 {
     "TIMESTAMP": {
         "_id": "TIMESTAMP",
-        "date": "Mon Aug 12 2024 16:10:39 GMT-0400 (Eastern Daylight Time)"
+        "date": "Wed Aug 14 2024 18:05:40 GMT-0400 (Eastern Daylight Time)"
     },
     "SRQ1C001": {
         "_id": "SRQ1C001",
@@ -9,9 +9,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C002": {
@@ -20,9 +22,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C003": {
@@ -31,9 +35,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C004": {
@@ -42,9 +48,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C005": {
@@ -53,9 +61,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C006": {
@@ -64,32 +74,38 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C007": {
         "_id": "SRQ1C007",
         "ip": "10.220.20.7",
         "reqSuccess": true,
-        "bpCurrentCount": 0,
+        "bpCurrentCount": 5,
         "bpTotalCount": 0,
-        "bpRemaining": 2000,
-        "btCurrentCount": 0,
+        "bpDifference": 0,
+        "bpRemaining": 1995,
+        "btCurrentCount": 5,
         "btTotalCount": 0,
-        "btRemaining": 200
+        "btDifference": 0,
+        "btRemaining": 195
     },
     "SRQ1C008": {
         "_id": "SRQ1C008",
         "ip": "10.220.20.8",
         "reqSuccess": true,
-        "bpCurrentCount": 0,
+        "bpCurrentCount": 33,
         "bpTotalCount": 0,
-        "bpRemaining": 2000,
-        "btCurrentCount": 0,
+        "bpDifference": 0,
+        "bpRemaining": 1967,
+        "btCurrentCount": 40,
         "btTotalCount": 0,
-        "btRemaining": 200
+        "btDifference": 0,
+        "btRemaining": 160
     },
     "SRQ1C009": {
         "_id": "SRQ1C009",
@@ -97,9 +113,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C010": {
@@ -108,9 +126,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C011": {
@@ -119,9 +139,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C012": {
@@ -130,9 +152,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C041": {
@@ -141,9 +165,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C042": {
@@ -152,9 +178,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C043": {
@@ -163,9 +191,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C044": {
@@ -174,9 +204,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C045": {
@@ -185,9 +217,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C046": {
@@ -196,9 +230,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C047": {
@@ -207,9 +243,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C049": {
@@ -218,10 +256,12 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
-        "btCurrentCount": 0,
+        "btCurrentCount": 17,
         "btTotalCount": 0,
-        "btRemaining": 200
+        "btDifference": 0,
+        "btRemaining": 183
     },
     "SRQ1C050": {
         "_id": "SRQ1C050",
@@ -229,32 +269,38 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C051": {
         "_id": "SRQ1C051",
         "ip": "10.220.20.51",
         "reqSuccess": true,
-        "bpCurrentCount": 27,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1973,
-        "btCurrentCount": 9,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 191
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C053": {
         "_id": "SRQ1C053",
         "ip": "10.220.20.53",
         "reqSuccess": true,
-        "bpCurrentCount": 26,
+        "bpCurrentCount": 4,
         "bpTotalCount": 0,
-        "bpRemaining": 1974,
-        "btCurrentCount": 15,
+        "bpDifference": 0,
+        "bpRemaining": 1996,
+        "btCurrentCount": 10,
         "btTotalCount": 0,
-        "btRemaining": 185
+        "btDifference": 0,
+        "btRemaining": 190
     },
     "SRQ1C054": {
         "_id": "SRQ1C054",
@@ -262,9 +308,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C055": {
@@ -273,9 +321,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C056": {
@@ -284,9 +334,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C057": {
@@ -295,21 +347,25 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C058": {
         "_id": "SRQ1C058",
         "ip": "10.220.20.58",
         "reqSuccess": true,
-        "bpCurrentCount": 4,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1996,
-        "btCurrentCount": 27,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 173
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C059": {
         "_id": "SRQ1C059",
@@ -317,21 +373,25 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C060": {
         "_id": "SRQ1C060",
         "ip": "10.220.20.60",
         "reqSuccess": true,
-        "bpCurrentCount": 1,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1999,
-        "btCurrentCount": 13,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 187
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C061": {
         "_id": "SRQ1C061",
@@ -339,21 +399,25 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C062": {
         "_id": "SRQ1C062",
         "ip": "10.220.20.62",
         "reqSuccess": true,
-        "bpCurrentCount": 13,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1987,
-        "btCurrentCount": 17,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 183
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C063": {
         "_id": "SRQ1C063",
@@ -361,32 +425,51 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
-        "btCurrentCount": 7,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 193
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C064": {
         "_id": "SRQ1C064",
         "ip": "10.220.20.64",
         "reqSuccess": true,
-        "bpCurrentCount": 4,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1996,
-        "btCurrentCount": 28,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 172
+        "btDifference": 0,
+        "btRemaining": 200
+    },
+    "SRQ1C065": {
+        "_id": "SRQ1C065",
+        "ip": "10.220.20.65",
+        "reqSuccess": true,
+        "bpCurrentCount": 0,
+        "bpTotalCount": 0,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
+        "btTotalCount": 0,
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C066": {
         "_id": "SRQ1C066",
         "ip": "10.220.20.150",
         "reqSuccess": true,
-        "bpCurrentCount": 8,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1992,
-        "btCurrentCount": 26,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 174
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1C067": {
         "_id": "SRQ1C067",
@@ -394,9 +477,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1C068": {
@@ -405,9 +490,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G01A": {
@@ -416,10 +503,12 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
-        "btCurrentCount": 19,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 181
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1G01B": {
         "_id": "SRQ1G01B",
@@ -427,9 +516,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G01C": {
@@ -438,32 +529,38 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G02A": {
         "_id": "SRQ1G02A",
         "ip": "10.220.20.102",
         "reqSuccess": true,
-        "bpCurrentCount": 0,
+        "bpCurrentCount": 6,
         "bpTotalCount": 0,
-        "bpRemaining": 2000,
-        "btCurrentCount": 0,
+        "bpDifference": 0,
+        "bpRemaining": 1994,
+        "btCurrentCount": 6,
         "btTotalCount": 0,
-        "btRemaining": 200
+        "btDifference": 0,
+        "btRemaining": 194
     },
     "SRQ1G02B": {
         "_id": "SRQ1G02B",
         "ip": "10.220.20.122",
         "reqSuccess": true,
-        "bpCurrentCount": 48,
+        "bpCurrentCount": 9,
         "bpTotalCount": 0,
-        "bpRemaining": 1952,
-        "btCurrentCount": 0,
+        "bpDifference": 0,
+        "bpRemaining": 1991,
+        "btCurrentCount": 16,
         "btTotalCount": 0,
-        "btRemaining": 200
+        "btDifference": 0,
+        "btRemaining": 184
     },
     "SRQ1G02C": {
         "_id": "SRQ1G02C",
@@ -471,9 +568,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G03B": {
@@ -482,42 +581,50 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
-        "btCurrentCount": 8,
+        "btCurrentCount": 19,
         "btTotalCount": 0,
-        "btRemaining": 192
+        "btDifference": 0,
+        "btRemaining": 181
     },
     "SRQ1G04A": {
         "_id": "SRQ1G04A",
         "ip": "10.220.20.104",
         "reqSuccess": true,
-        "bpCurrentCount": 3,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1997,
-        "btCurrentCount": 5,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 195
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1G05A": {
         "_id": "SRQ1G05A",
         "ip": "10.220.20.105",
         "reqSuccess": true,
-        "bpCurrentCount": 9,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1991,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G05B": {
         "_id": "SRQ1G05B",
         "ip": "10.220.20.125",
         "reqSuccess": true,
-        "bpCurrentCount": 19,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1981,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G05C": {
@@ -526,9 +633,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G06A": {
@@ -537,9 +646,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G06C": {
@@ -548,20 +659,24 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G07A": {
         "_id": "SRQ1G07A",
         "ip": "10.220.20.107",
         "reqSuccess": true,
-        "bpCurrentCount": 3,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1997,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G07B": {
@@ -570,31 +685,50 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G07C": {
         "_id": "SRQ1G07C",
         "ip": "10.220.20.147",
         "reqSuccess": true,
-        "bpCurrentCount": 1,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1999,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G08A": {
         "_id": "SRQ1G08A",
         "ip": "10.220.20.108",
         "reqSuccess": true,
-        "bpCurrentCount": 1,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1999,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
+        "btRemaining": 200
+    },
+    "SRQ1G08B": {
+        "_id": "SRQ1G08B",
+        "ip": "10.220.20.128",
+        "reqSuccess": true,
+        "bpCurrentCount": 0,
+        "bpTotalCount": 0,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
+        "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G08C": {
@@ -603,42 +737,50 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G09A": {
         "_id": "SRQ1G09A",
         "ip": "10.220.20.109",
         "reqSuccess": true,
-        "bpCurrentCount": 2,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1998,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G09B": {
         "_id": "SRQ1G09B",
         "ip": "10.220.20.129",
         "reqSuccess": true,
-        "bpCurrentCount": 2,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1998,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G09C": {
         "_id": "SRQ1G09C",
         "ip": "10.220.20.149",
         "reqSuccess": true,
-        "bpCurrentCount": 2,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1998,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G11A": {
@@ -647,9 +789,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G11B": {
@@ -658,9 +802,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G11C": {
@@ -669,21 +815,25 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G12A": {
         "_id": "SRQ1G12A",
         "ip": "10.220.20.112",
         "reqSuccess": true,
-        "bpCurrentCount": 6,
+        "bpCurrentCount": 0,
         "bpTotalCount": 0,
-        "bpRemaining": 1994,
-        "btCurrentCount": 4,
+        "bpDifference": 0,
+        "bpRemaining": 2000,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 196
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1G12B": {
         "_id": "SRQ1G12B",
@@ -691,9 +841,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G14A": {
@@ -702,10 +854,12 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
-        "btCurrentCount": 0,
+        "btCurrentCount": 3,
         "btTotalCount": 0,
-        "btRemaining": 200
+        "btDifference": 0,
+        "btRemaining": 197
     },
     "SRQ1G15A": {
         "_id": "SRQ1G15A",
@@ -713,9 +867,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G15B": {
@@ -724,9 +880,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G15C": {
@@ -735,9 +893,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G15D": {
@@ -746,9 +906,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1G15E": {
@@ -757,10 +919,12 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
-        "btCurrentCount": 2,
+        "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 198
+        "btDifference": 0,
+        "btRemaining": 200
     },
     "SRQ1M001": {
         "_id": "SRQ1M001",
@@ -768,31 +932,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
-        "btRemaining": 200
-    },
-    "SRQ1C065": {
-        "_id": "SRQ1C065",
-        "ip": "10.220.20.65",
-        "reqSuccess": true,
-        "bpCurrentCount": 10,
-        "bpTotalCount": 0,
-        "bpRemaining": 1990,
-        "btCurrentCount": 16,
-        "btTotalCount": 0,
-        "btRemaining": 184
-    },
-    "SRQ1G08B": {
-        "_id": "SRQ1G08B",
-        "ip": "10.220.20.128",
-        "reqSuccess": true,
-        "bpCurrentCount": 1,
-        "bpTotalCount": 0,
-        "bpRemaining": 1999,
-        "btCurrentCount": 0,
-        "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     },
     "SRQ1M002": {
@@ -801,9 +945,11 @@
         "reqSuccess": true,
         "bpCurrentCount": 0,
         "bpTotalCount": 0,
+        "bpDifference": 0,
         "bpRemaining": 2000,
         "btCurrentCount": 0,
         "btTotalCount": 0,
+        "btDifference": 0,
         "btRemaining": 200
     }
 }
