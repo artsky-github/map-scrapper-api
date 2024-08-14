@@ -2,15 +2,15 @@ const axios = require("axios");
 const fs = require("fs");
 const { convert } = require("html-to-text");
 const htmlparser2 = require("htmlparser2");
-let hosts = require("./cupps-hosts.json");
-let mapCounts = require("./map-print-count.json");
-const { postArrayData } = require("./mongo-client");
-const { hasPrinterSuccessMessage } = require("./log-dom-handler");
+let hosts = require("../data/cupps-hosts.json");
+let mapCounts = require("../data/map-print-count.json");
+const { postArrayData } = require("../mongo/mongo-client");
+const { hasPrinterSuccessMessage } = require("../parser/log-dom-handler");
 
 // tester host, removing this will have query configurations to all CUPPS hosts.
 //hosts = { "10.220.20.195": "SRQ1G15E" };
 
-const mapFileName = "map-print-count.json";
+const mapFileName = "../data/map-print-count.json";
 const bpTotalPaper = 2000;
 const btTotalPaper = 200;
 

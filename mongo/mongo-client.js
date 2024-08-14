@@ -1,6 +1,6 @@
-require("dotenv").config();
+require("dotenv").config({ path: "../.env" });
 const { MongoClient } = require("mongodb");
-const hosts = require("./cupps-hosts.json");
+const hosts = require("../data/cupps-hosts.json");
 
 const dbURI = `mongodb://${process.env.DB_IP}:${process.env.DB_PORT}`;
 

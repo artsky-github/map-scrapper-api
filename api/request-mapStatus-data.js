@@ -1,7 +1,7 @@
 const axios = require("axios");
 const htmlparser2 = require("htmlparser2");
-const { postArrayData } = require("./mongo-client");
-const hosts = require("./cupps-hosts.json");
+const { postArrayData } = require("../mongo/mongo-client");
+const hosts = require("../data/cupps-hosts.json");
 
 // tester host, removing this will have query configurations to all CUPPS hosts.
 //hosts = { "10.220.20.195": "SRQ1G15E" };

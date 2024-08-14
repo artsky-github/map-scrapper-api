@@ -1,5 +1,5 @@
-const bpSuccessMessages = require("./bp-success-messages.json");
-const btSuccessMessages = require("./bt-success-messages.json");
+const bpSuccessMessages = require("../data/bp-success-messages.json");
+const btSuccessMessages = require("../data/bt-success-messages.json");
 
 function hasPrinterSuccessMessage(currentMessage, typeOf) {
   if (typeOf === "BP") {
