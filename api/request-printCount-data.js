@@ -3,8 +3,7 @@ const fs = require("fs");
 const { convert } = require("html-to-text");
 const htmlparser2 = require("htmlparser2");
 let hosts = require("../data/cupps-hosts.json");
-let mapCounts = require("../data/map-print-count.json");
-const { postArrayData } = require("../mongo/mongo-client");
+const { sendToDB, getFromDB } = require("../mongo/mongo-client");
 const { hasPrinterSuccessMessage } = require("../parser/log-dom-handler");
 
 // tester host, removing this will have query configurations to all CUPPS hosts.
@@ -20,8 +19,17 @@ async function delayer(ms) {
   });
 }
 
-async function pollPrintCountData() {
+function arrayToObject(array) {
+  const encapsulator = {};
+  for (let obj of array) {
+    encapsulator[obj._id] = obj;
+  }
+  return encapsulator;
+}
+
+async function pollCountData() {
   while (true) {
+    mapCounts = arrayToObject(await getFromDB("mapCounts"));
     mapCounts["TIMESTAMP"] = { _id: "TIMESTAMP", date: new Date().toString() };
     axios
       .all(
@@ -206,18 +214,12 @@ async function pollPrintCountData() {
           }
         });
 
-        fs.writeFile(mapFileName, JSON.stringify(mapCounts, null, 4), (err) => {
-          if (err) {
-            console.error(err);
-          }
-        });
-
         let mapCountsArray = Object.values(mapCounts);
 
-        postArrayData(mapCountsArray, "mapCounts");
+        sendToDB(mapCountsArray, "mapCounts");
       });
     await delayer(30000);
   }
 }
 
-pollPrintCountData();
+pollCountData();

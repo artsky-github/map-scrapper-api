@@ -11,7 +11,7 @@ try {
   console.log(error);
 }
 
-function postArrayData(mapArray, collectionName) {
+function sendToDB(mapArray, collectionName) {
   let activeHosts = Object.values(hosts);
   activeHosts.push("TIMESTAMP");
 
@@ -41,4 +41,12 @@ function postArrayData(mapArray, collectionName) {
   );
 }
 
-module.exports = { postArrayData };
+async function getFromDB(collectionName) {
+  const collectionArray = await mongoClient
+    .collection(collectionName)
+    .find()
+    .toArray();
+  return collectionArray;
+}
+
+module.exports = { sendToDB, getFromDB };
