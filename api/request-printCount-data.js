@@ -23,7 +23,7 @@ async function delayer(ms) {
 async function pollPrintCountData() {
   while (true) {
     mapCounts["TIMESTAMP"] = { _id: "TIMESTAMP", date: new Date().toString() };
-    await axios
+    axios
       .all(
         Object.keys(hosts).map((ip) =>
           axios.get(`http://${ip}/DEBUG`, { timeout: 5000 }).catch((error) => {
@@ -194,7 +194,7 @@ async function pollPrintCountData() {
 
         postArrayData(mapCountsArray, "mapCounts");
       });
-    await delayer(10000);
+    await delayer(30000);
   }
 }
 
