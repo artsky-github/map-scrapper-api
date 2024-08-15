@@ -114,6 +114,7 @@ async function pollPrintCountData() {
                       mapCounts[responseHost].bpCurrentCount;
                     mapCounts[responseHost].bpCurrentCount =
                       bpLogCount + mapCounts[responseHost].bpDifference;
+                    mapCounts[responseHost].bpDifference = 0;
                   }
 
                   mapCounts[responseHost].bpRemaining =
@@ -156,6 +157,7 @@ async function pollPrintCountData() {
                       mapCounts[responseHost].btCurrentCount;
                     mapCounts[responseHost].btCurrentCount =
                       btLogCount + mapCounts[responseHost].btDifference;
+                    mapCounts[responseHost].btDifference = 0;
                   }
 
                   mapCounts[responseHost].btRemaining =
