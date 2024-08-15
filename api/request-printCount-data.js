@@ -117,6 +117,17 @@ async function pollPrintCountData() {
                     mapCounts[responseHost].bpDifference = 0;
                   }
 
+                  const bpSubtractedRemaining =
+                    bpTotalPaper -
+                    (mapCounts[responseHost].bpCurrentCount +
+                      mapCounts[responseHost].bpTotalCount);
+
+                  if (bpSubtractedRemaining < 0) {
+                    mapCounts[responseHost].bpCurrentCount =
+                      mapCounts[responseHost].bpCurrentCount +
+                      bpSubtractedRemaining;
+                  }
+
                   mapCounts[responseHost].bpRemaining =
                     bpTotalPaper -
                     (mapCounts[responseHost].bpCurrentCount +
@@ -158,6 +169,17 @@ async function pollPrintCountData() {
                     mapCounts[responseHost].btCurrentCount =
                       btLogCount + mapCounts[responseHost].btDifference;
                     mapCounts[responseHost].btDifference = 0;
+                  }
+
+                  const btSubtractedRemaining =
+                    bpTotalPaper -
+                    (mapCounts[responseHost].btCurrentCount +
+                      mapCounts[responseHost].btTotalCount);
+
+                  if (btSubtractedRemaining < 0) {
+                    mapCounts[responseHost].btCurrentCount =
+                      mapCounts[responseHost].btCurrentCount +
+                      btSubtractedRemaining;
                   }
 
                   mapCounts[responseHost].btRemaining =
