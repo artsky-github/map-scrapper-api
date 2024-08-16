@@ -9,7 +9,6 @@ const { hasPrinterSuccessMessage } = require("../parser/log-dom-handler");
 // tester host, removing this will have query configurations to all CUPPS hosts.
 //hosts = { "10.220.20.195": "SRQ1G15E" };
 
-const mapFileName = "../data/map-print-count.json";
 const bpTotalPaper = 2000;
 const btTotalPaper = 200;
 
@@ -88,6 +87,18 @@ async function pollCountData() {
                   mapCounts[responseHost].reqSuccess = true;
                 }
 
+                const bpLogCount = htmlparser2.DomUtils.find(
+                  (elem) => {
+                    return (
+                      elem.name === "aeaText" &&
+                      hasPrinterSuccessMessage(elem.children[0].data, "BP")
+                    );
+                  },
+                  dom,
+                  { recurse: true }
+                ).length;
+
+                /*
                 if (mapCounts[responseHost].bpRemaining > 0) {
                   const bpLogCount = htmlparser2.DomUtils.find(
                     (elem) => {
@@ -194,7 +205,7 @@ async function pollCountData() {
                     btTotalPaper -
                     (mapCounts[responseHost].btCurrentCount +
                       mapCounts[responseHost].btTotalCount);
-                }
+                }*/
               }
             });
             const parser = new htmlparser2.Parser(domhandler, {
