@@ -28,7 +28,7 @@ function arrayToObject(array) {
 
 async function pollCountData() {
   while (true) {
-    mapCounts = arrayToObject(await getFromDB("mapCounts"));
+    mapCounts = arrayToObject(await getFromDB("counts"));
     mapCounts["TIMESTAMP"] = { _id: "TIMESTAMP", date: new Date().toString() };
     axios
       .all(
@@ -227,7 +227,7 @@ async function pollCountData() {
 
         let mapCountsArray = Object.values(mapCounts);
 
-        sendToDB(mapCountsArray, "mapCounts");
+        sendToDB(mapCountsArray, "counts");
       });
     await delayer(30000);
   }

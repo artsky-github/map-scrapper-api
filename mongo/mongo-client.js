@@ -6,7 +6,7 @@ const dbURI = `mongodb://${process.env.DB_IP}:${process.env.DB_PORT}`;
 
 let mongoClient;
 try {
-  mongoClient = new MongoClient(dbURI).db("MapStatusDB");
+  mongoClient = new MongoClient(dbURI).db("MapMonitor");
 } catch (error) {
   console.log(error);
 }

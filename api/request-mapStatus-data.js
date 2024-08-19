@@ -1,6 +1,6 @@
 const axios = require("axios");
 const htmlparser2 = require("htmlparser2");
-const { postArrayData } = require("../mongo/mongo-client");
+const { sendToDB } = require("../mongo/mongo-client");
 const hosts = require("../data/cupps-hosts.json");
 
 // tester host, removing this will have query configurations to all CUPPS hosts.
@@ -112,7 +112,7 @@ async function pollStatusData() {
             parser.reset();
           }
         });
-        postArrayData(mapStatuses, "mapStatuses");
+        sendToDB(mapStatuses, "statuses");
       });
     await delayer(30000);
   }
