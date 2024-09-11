@@ -76,7 +76,7 @@ hosts = {
   "10.220.20.201": "SRQ1M002",
 };
 
-fs.writeFile("cupps-hosts.json", JSON.stringify(hosts, null, 4), (err) => {
+fs.writeFile("../data/cupps-hosts.json", JSON.stringify(hosts, null, 4), (err) => {
   if (err) {
     console.error(err);
   } else {
