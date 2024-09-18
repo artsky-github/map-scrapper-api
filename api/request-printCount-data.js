@@ -30,7 +30,7 @@ async function pollCountData() {
   while (true) {
     mapCounts = arrayToObject(await getFromDB("counts"));
     mapCounts["TIMESTAMP"] = { _id: "TIMESTAMP", date: new Date().toString() };
-    await axios
+    axios
       .all(
         Object.keys(hosts).map((ip) =>
           axios.get(`http://${ip}/DEBUG`, { timeout: 5000 }).catch((error) => {
@@ -229,7 +229,7 @@ async function pollCountData() {
 
         sendToDB(mapCountsArray, "counts");
       });
-    await delayer(15000);
+    await delayer(45000);
   }
 }
 

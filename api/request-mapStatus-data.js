@@ -15,7 +15,7 @@ async function delayer(ms) {
 async function pollStatusData() {
   while (true) {
     let mapStatuses = [{ _id: "TIMESTAMP", date: new Date().toString() }];
-    await axios
+    axios
       .all(
         Object.keys(hosts).map((ip) =>
           axios.get(`http://${ip}`, { timeout: 5000 }).catch((error) => {
@@ -42,7 +42,12 @@ async function pollStatusData() {
             if (err) {
               console.log("An error has occurred obtaining the DOM");
             } else {
-              let statusCell;
+              let bpStatusCell;
+              let bpMediaCell; 
+              let bpStateCell; 
+              let btStatusCell; 
+              let btMediaCell; 
+              let btStateCell; 
               const rowBP = htmlparser2.DomUtils.find(
                 (elem) => {
                   return elem.name === "a" && elem.attribs.href === "BP1";
@@ -114,7 +119,7 @@ async function pollStatusData() {
         });
         sendToDB(mapStatuses, "statuses");
       });
-    await delayer(15000);
+    await delayer(45000);
   }
 }
 
