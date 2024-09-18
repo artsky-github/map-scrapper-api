@@ -44,14 +44,14 @@ async function pollCountData() {
                   _id: errorHost,
                   ip: errorIP,
                   reqSuccess: false,
-                  bpCurrentCount: null,
                   bpTotalCount: null,
-                  bpDifference: null,
+                  bpCurrentTimestamp: null, 
                   bpRemaining: null,
-                  btCurrentCount: null,
+                  bpRemainingStatus: null,
                   btTotalCount: null,
+                  btCurrentTimestamp: null,
                   btRemaining: null,
-                  btDifference: null,
+                  btRemainingStatus: null
                 };
               }
             }
@@ -72,14 +72,14 @@ async function pollCountData() {
                     _id: responseHost,
                     ip: response.request.host,
                     reqSuccess: true,
-                    bpCurrentCount: 0,
                     bpTotalCount: 0,
-                    bpDifference: 0,
+                    bpCurrentTimestamp: 0,
                     bpRemaining: bpTotalPaper,
-                    btCurrentCount: 0,
+                    bpRemainingStatus: "FULL",
                     btTotalCount: 0,
-                    btDifference: 0,
+                    btCurrentTimestamp: 0,
                     btRemaining: btTotalPaper,
+                    btRemainingStatus: "FULL",
                   };
                 }
 
@@ -87,7 +87,7 @@ async function pollCountData() {
                   mapCounts[responseHost].reqSuccess = true;
                 }
 
-                const bpLogCount = htmlparser2.DomUtils.find(
+                const bpLogCountArray = htmlparser2.DomUtils.find(
                   (elem) => {
                     return (
                       elem.name === "aeaText" &&
@@ -96,116 +96,58 @@ async function pollCountData() {
                   },
                   dom,
                   { recurse: true }
-                ).length;
+                );
 
-                /*
-                if (mapCounts[responseHost].bpRemaining > 0) {
-                  const bpLogCount = htmlparser2.DomUtils.find(
-                    (elem) => {
-                      return (
-                        elem.name === "aeaText" &&
-                        hasPrinterSuccessMessage(elem.children[0].data, "BP")
-                      );
-                    },
-                    dom,
-                    { recurse: true }
-                  ).length;
+                const btLogCountArray = htmlparser2.DomUtils.find(
+                  (elem) => {
+                    return (
+                      elem.name === "aeaText" &&
+                      hasPrinterSuccessMessage(elem.children[0].data, "BT")
+                    );
+                  },
+                  dom,
+                  { recurse: true }
+                );
 
-                  if (
-                    mapCounts[responseHost].bpCurrentCount >
-                      bpLogCount + mapCounts[responseHost].bpDifference &&
-                    bpLogCount + mapCounts[responseHost].bpDifference !== 0
-                  ) {
-                    mapCounts[responseHost].bpDifference =
-                      mapCounts[responseHost].bpDifference +
-                      (mapCounts[responseHost].bpCurrentCount - bpLogCount);
-                  }
-
-                  if (
-                    mapCounts[responseHost].bpCurrentCount <=
-                    bpLogCount + mapCounts[responseHost].bpDifference
-                  ) {
-                    mapCounts[responseHost].bpCurrentCount =
-                      bpLogCount + mapCounts[responseHost].bpDifference;
-                  } else {
-                    mapCounts[responseHost].bpTotalCount =
-                      mapCounts[responseHost].bpTotalCount +
-                      mapCounts[responseHost].bpCurrentCount;
-                    mapCounts[responseHost].bpCurrentCount =
-                      bpLogCount + mapCounts[responseHost].bpDifference;
-                    mapCounts[responseHost].bpDifference = 0;
-                  }
-
-                  const bpSubtractedRemaining =
-                    bpTotalPaper -
-                    (mapCounts[responseHost].bpCurrentCount +
-                      mapCounts[responseHost].bpTotalCount);
-
-                  if (bpSubtractedRemaining < 0) {
-                    mapCounts[responseHost].bpCurrentCount =
-                      mapCounts[responseHost].bpCurrentCount +
-                      bpSubtractedRemaining;
-                  }
-
-                  mapCounts[responseHost].bpRemaining =
-                    bpTotalPaper -
-                    (mapCounts[responseHost].bpCurrentCount +
-                      mapCounts[responseHost].bpTotalCount);
+                for (let bpLogCount of bpLogCountArray.reverse()) {
+                  const bpLogCountTimestamp = Date.parse(bpLogCount.parent.parent.parent.attribs.timeStamp);
+                   if (mapCounts[responseHost].bpCurrentTimestamp < bpLogCountTimestamp && mapCounts[responseHost].bpTotalCount < bpTotalPaper) {
+                     mapCounts[responseHost].bpTotalCount++;
+                     mapCounts[responseHost].bpCurrentTimestamp = bpLogCountTimestamp;
+                   }
                 }
 
-                if (mapCounts[responseHost].btRemaining > 0) {
-                  const btLogCount = htmlparser2.DomUtils.find(
-                    (elem) => {
-                      return (
-                        elem.name === "aeaText" &&
-                        hasPrinterSuccessMessage(elem.children[0].data, "BT")
-                      );
-                    },
-                    dom,
-                    { recurse: true }
-                  ).length;
+                for (let btLogCount of btLogCountArray.reverse()) {
+                  const btLogCountTimestamp = Date.parse(btLogCount.parent.parent.parent.attribs.timeStamp);
+                   if (mapCounts[responseHost].btCurrentTimestamp < btLogCountTimestamp && mapCounts[responseHost].btTotalCount < btTotalPaper) {
+                     mapCounts[responseHost].btTotalCount++;
+                     mapCounts[responseHost].btCurrentTimestamp = btLogCountTimestamp;
+                   }
+                }
 
-                  if (
-                    mapCounts[responseHost].btCurrentCount >
-                      btLogCount + mapCounts[responseHost].btDifference &&
-                    btLogCount + mapCounts[responseHost].btDifference !== 0
-                  ) {
-                    mapCounts[responseHost].btDifference =
-                      mapCounts[responseHost].btDifference +
-                      (mapCounts[responseHost].btCurrentCount - btLogCount);
-                  }
+                mapCounts[responseHost].bpRemaining = bpTotalPaper - mapCounts[responseHost].bpTotalCount; 
+                mapCounts[responseHost].btRemaining = btTotalPaper - mapCounts[responseHost].btTotalCount;
 
-                  if (
-                    mapCounts[responseHost].btCurrentCount <=
-                    btLogCount + mapCounts[responseHost].btDifference
-                  ) {
-                    mapCounts[responseHost].btCurrentCount =
-                      btLogCount + mapCounts[responseHost].btDifference;
-                  } else {
-                    mapCounts[responseHost].btTotalCount =
-                      mapCounts[responseHost].btTotalCount +
-                      mapCounts[responseHost].btCurrentCount;
-                    mapCounts[responseHost].btCurrentCount =
-                      btLogCount + mapCounts[responseHost].btDifference;
-                    mapCounts[responseHost].btDifference = 0;
-                  }
+                if (mapCounts[responseHost].bpRemaining === bpTotalPaper) {
+                  mapCounts[responseHost].bpRemainingStatus = "FULL";
+                } else if (mapCounts[responseHost].bpRemaining < bpTotalPaper && mapCounts[responseHost].bpRemaining > 1100) {
+                  mapCounts[responseHost].bpRemainingStatus = "GOOD";
+                } else if (mapCounts[responseHost].bpRemaining < 1100 && mapCounts[responseHost].bpRemaining > 1) {
+                  mapCounts[responseHost].bpRemainingStatus = "LOW";
+                } else {
+                  mapCounts[responseHost].bpRemainingStatus = "EMPTY";
+                }
 
-                  const btSubtractedRemaining =
-                    bpTotalPaper -
-                    (mapCounts[responseHost].btCurrentCount +
-                      mapCounts[responseHost].btTotalCount);
+                if (mapCounts[responseHost].btRemaining === btTotalPaper) {
+                  mapCounts[responseHost].btRemainingStatus = "FULL";
+                } else if (mapCounts[responseHost].btRemaining < btTotalPaper && mapCounts[responseHost].btRemaining > 25) {
+                  mapCounts[responseHost].btRemainingStatus = "GOOD";
+                } else if (mapCounts[responseHost].btRemaining < 25 && mapCounts[responseHost].btRemaining > 1) {
+                  mapCounts[responseHost].btRemainingStatus = "LOW";
+                } else {
+                  mapCounts[responseHost].btRemainingStatus = "EMPTY";
+                }
 
-                  if (btSubtractedRemaining < 0) {
-                    mapCounts[responseHost].btCurrentCount =
-                      mapCounts[responseHost].btCurrentCount +
-                      btSubtractedRemaining;
-                  }
-
-                  mapCounts[responseHost].btRemaining =
-                    btTotalPaper -
-                    (mapCounts[responseHost].btCurrentCount +
-                      mapCounts[responseHost].btTotalCount);
-                }*/
               }
             });
             const parser = new htmlparser2.Parser(domhandler, {
