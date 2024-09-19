@@ -15,7 +15,7 @@ async function delayer(ms) {
 async function pollStatusData() {
   while (true) {
     let mapStatuses = [{ _id: "TIMESTAMP", date: new Date().toString() }];
-    axios
+    await axios
       .all(
         Object.keys(hosts).map((ip) =>
           axios.get(`http://${ip}`, { timeout: 5000 }).catch((error) => {
@@ -119,7 +119,7 @@ async function pollStatusData() {
         });
         sendToDB(mapStatuses, "statuses");
       });
-    await delayer(45000);
+    await delayer(15000);
   }
 }
 
