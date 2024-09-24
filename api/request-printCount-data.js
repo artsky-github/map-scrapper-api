@@ -47,11 +47,11 @@ async function pollCountData() {
                   bpTotalCount: null,
                   bpCurrentTimestamp: null, 
                   bpRemaining: null,
-                  bpRemainingStatus: null,
+                  bpRemainingPercent: null,
                   btTotalCount: null,
                   btCurrentTimestamp: null,
                   btRemaining: null,
-                  btRemainingStatus: null
+                  btRemainingPercent: null
                 };
               }
             }
@@ -75,11 +75,11 @@ async function pollCountData() {
                     bpTotalCount: 0,
                     bpCurrentTimestamp: 0,
                     bpRemaining: bpTotalPaper,
-                    bpRemainingStatus: "FULL",
+                    bpRemainingPercent: 100,
                     btTotalCount: 0,
                     btCurrentTimestamp: 0,
                     btRemaining: btTotalPaper,
-                    btRemainingStatus: "FULL",
+                    btRemainingPercent: 100,
                   };
                 }
 
@@ -128,25 +128,8 @@ async function pollCountData() {
                 mapCounts[responseHost].bpRemaining = bpTotalPaper - mapCounts[responseHost].bpTotalCount; 
                 mapCounts[responseHost].btRemaining = btTotalPaper - mapCounts[responseHost].btTotalCount;
 
-                if (mapCounts[responseHost].bpRemaining === bpTotalPaper) {
-                  mapCounts[responseHost].bpRemainingStatus = "FULL";
-                } else if (mapCounts[responseHost].bpRemaining < bpTotalPaper && mapCounts[responseHost].bpRemaining > 1100) {
-                  mapCounts[responseHost].bpRemainingStatus = "GOOD";
-                } else if (mapCounts[responseHost].bpRemaining < 1100 && mapCounts[responseHost].bpRemaining > 1) {
-                  mapCounts[responseHost].bpRemainingStatus = "LOW";
-                } else {
-                  mapCounts[responseHost].bpRemainingStatus = "EMPTY";
-                }
-
-                if (mapCounts[responseHost].btRemaining === btTotalPaper) {
-                  mapCounts[responseHost].btRemainingStatus = "FULL";
-                } else if (mapCounts[responseHost].btRemaining < btTotalPaper && mapCounts[responseHost].btRemaining > 25) {
-                  mapCounts[responseHost].btRemainingStatus = "GOOD";
-                } else if (mapCounts[responseHost].btRemaining < 25 && mapCounts[responseHost].btRemaining > 1) {
-                  mapCounts[responseHost].btRemainingStatus = "LOW";
-                } else {
-                  mapCounts[responseHost].btRemainingStatus = "EMPTY";
-                }
+                mapCounts[responseHost].bpRemainingPercent = Math.round(mapCounts[responseHost].bpRemaining / bpTotalPaper * 100);
+                mapCounts[responseHost].btRemainingPercent = Math.round(mapCounts[responseHost].btRemaining / btTotalPaper * 100);
 
               }
             });
